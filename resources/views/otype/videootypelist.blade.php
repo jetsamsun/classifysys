@@ -28,7 +28,6 @@
             var tableIn= table.render({
                 elem: '#test'
                 ,url:'/admin/vidotype/getVideoOtypeList'
-                ,width: 1024
                 ,page:false
                 ,cols: [[
                     {type:'checkbox', fixed: 'left'}
