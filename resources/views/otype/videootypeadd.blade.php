@@ -17,13 +17,13 @@
         <div class="layui-form-item">
             <label class="layui-form-label">英文名称</label>
             <div class="layui-input-block">
-                <input type="text" name="otypename_en" lay-verify="required" autocomplete="off" placeholder="请输入英文名称" class="layui-input">
+                <input type="text" name="otypename_en"  autocomplete="off" placeholder="请输入英文名称" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">其他名称</label>
             <div class="layui-input-block">
-                <input type="text" name="otypename_ks" lay-verify="required" autocomplete="off" placeholder="请输入其他名称" class="layui-input">
+                <input type="text" name="otypename_ks"  autocomplete="off" placeholder="请输入其他名称" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
