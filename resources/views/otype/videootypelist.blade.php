@@ -34,9 +34,9 @@
                     {type:'checkbox', fixed: 'left'}
                     ,{field:'oid', width:80, title: 'ID', sort: true, fixed: 'left'}
                     ,{field:'otype', width:150,title: '父类'}
-                    ,{field:'otypename', width:150,title: '分类名称'}
-                    ,{field:'otypename_en', width:150,title: '英文名称'}
-                    ,{field:'otypename_ks', width:150,title: '其他名称'}
+                    ,{field:'otypename', width:300,title: '分类名称'}
+                    ,{field:'otypename_en', width:300,title: '英文名称'}
+                    ,{field:'otypename_ks', width:300,title: '其他名称'}
                     ,{field:'pic', width:150,title: '展示图',templet: '<div><img src="@{{ d.pic  }}" width="30px" height="40px" ></div>'}
                     ,{fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
                 ]]
