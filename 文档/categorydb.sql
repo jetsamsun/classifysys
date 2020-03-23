@@ -11,7 +11,7 @@
  Target Server Version : 50726
  File Encoding         : 65001
 
- Date: 22/03/2020 12:03:12
+ Date: 23/03/2020 10:16:51
 */
 
 SET NAMES utf8mb4;
@@ -195,18 +195,6 @@ CREATE TABLE `app_list_otype`  (
 ) ENGINE = InnoDB AUTO_INCREMENT = 10011 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
--- Records of app_list_otype
--- ----------------------------
-INSERT INTO `app_list_otype` VALUES (10001, 1, '最新', NULL, NULL, 1, NULL, NULL, 'drgsadf', '/assets/uploads/image/otype/2019/0307/1551907890541.jpg', '2', 'www.baidu.com', 'www.baidu.com');
-INSERT INTO `app_list_otype` VALUES (10002, 1, '排行', NULL, NULL, 1, NULL, NULL, '震惊，男子居然哭了', '/assets/uploads/image/otype/2019/0307/1551907967122.jpg', '2', 'www.baidu.com', 'www.baidu.com');
-INSERT INTO `app_list_otype` VALUES (10003, 1, '综艺', NULL, NULL, 1, NULL, NULL, '标题图片1,标题图片2', '/assets/uploads/image/otype/2018/1109/1541757207610.jpg,/assets/uploads/image/otype/2018/1109/1541757207610.jpg', '1,2', 'https://www.baidu.com,https://www.baidu.com', 'https://www.baidu.com,https://www.baidu.com');
-INSERT INTO `app_list_otype` VALUES (10004, 1, '独家', NULL, NULL, 1, NULL, NULL, '标题图片1,标题图片2', '/assets/uploads/image/otype/2018/1109/1541757207610.jpg,/assets/uploads/image/otype/2018/1109/1541757207610.jpg', '1,2', 'https://www.baidu.com,https://www.baidu.com', 'https://www.baidu.com,https://www.baidu.com');
-INSERT INTO `app_list_otype` VALUES (10005, 1, '热销', NULL, NULL, 1, NULL, NULL, '标题图片1,标题图片2', '/assets/uploads/image/otype/2018/1109/1541757207610.jpg,/assets/uploads/image/otype/2018/1109/1541757207610.jpg', '1,1', 'https://www.baidu.com,https://www.baidu.com', 'https://www.baidu.com,https://www.baidu.com');
-INSERT INTO `app_list_otype` VALUES (10006, 5, '最新', NULL, NULL, 1, NULL, NULL, '标题图片1,标题图片2', '/assets/uploads/image/otype/2018/1109/1541757207610.jpg,/assets/uploads/image/otype/2018/1109/1541757207610.jpg', '1,2', 'https://www.baidu.com,https://www.baidu.com', 'https://www.baidu.com,https://www.baidu.com');
-INSERT INTO `app_list_otype` VALUES (10009, 5, '推荐', NULL, NULL, 1, NULL, NULL, 'fdhxjtf', '', '', '7635687', '5473567');
-INSERT INTO `app_list_otype` VALUES (10010, 5, '力荐', NULL, NULL, 1, NULL, NULL, 'werf', '', '', 'http://clusterctl.xyz/admin/firstotype/editfirstotype/10010', 'http://clusterctl.xyz/admin/firstotype/editfirstotype/10010');
-
--- ----------------------------
 -- Table structure for app_login_logs
 -- ----------------------------
 DROP TABLE IF EXISTS `app_login_logs`;
@@ -255,17 +243,17 @@ CREATE TABLE `app_menu_info`  (
 -- ----------------------------
 -- Records of app_menu_info
 -- ----------------------------
-INSERT INTO `app_menu_info` VALUES (10001, '视频管理', 'fa-circle-o', 0, NULL, NULL, 5, 1, 1);
-INSERT INTO `app_menu_info` VALUES (10002, '视频列表', 'fa-circle-o', 10001, '/admin/video', NULL, 5, 1, 1);
+INSERT INTO `app_menu_info` VALUES (10001, '视频管理', 'fa-circle-o', 0, NULL, NULL, 5, 0, 0);
+INSERT INTO `app_menu_info` VALUES (10002, '视频列表', 'fa-circle-o', 10001, '/admin/video', NULL, 5, 0, 0);
 INSERT INTO `app_menu_info` VALUES (10003, '视频新增', 'fa-circle-o', 10001, '/admin/addVideo', NULL, 5, 0, 0);
-INSERT INTO `app_menu_info` VALUES (10004, '明星管理', 'fa-circle-o', 0, NULL, NULL, 5, 1, 1);
-INSERT INTO `app_menu_info` VALUES (10005, '明星列表', 'fa-circle-o', 10004, '/admin/star', NULL, 5, 1, 1);
-INSERT INTO `app_menu_info` VALUES (10006, '新增明星', 'fa-circle-o', 10004, '/admin/addStar', NULL, 5, 1, 1);
+INSERT INTO `app_menu_info` VALUES (10004, '明星管理', 'fa-circle-o', 0, NULL, NULL, 5, 0, 0);
+INSERT INTO `app_menu_info` VALUES (10005, '明星列表', 'fa-circle-o', 10004, '/admin/star', NULL, 5, 0, 0);
+INSERT INTO `app_menu_info` VALUES (10006, '新增明星', 'fa-circle-o', 10004, '/admin/addStar', NULL, 5, 0, 0);
 INSERT INTO `app_menu_info` VALUES (10007, '用户管理', 'fa-circle-o', 0, NULL, NULL, 5, 0, 0);
 INSERT INTO `app_menu_info` VALUES (10008, '用户列表', 'fa-circle-o', 10007, '/admin/user', NULL, 5, 0, 0);
 INSERT INTO `app_menu_info` VALUES (10009, '分类管理', 'fa-circle-o', 0, NULL, NULL, 5, 1, 1);
-INSERT INTO `app_menu_info` VALUES (10010, '导航分类', 'fa-circle-o', 10009, '/admin/firstotype', NULL, 5, 1, 1);
-INSERT INTO `app_menu_info` VALUES (10011, '视频分类', 'fa-circle-o', 10009, '/admin/vidotype', NULL, 5, 1, 1);
+INSERT INTO `app_menu_info` VALUES (10010, '属性分类', 'fa-circle-o', 10009, '/admin/firstotype', NULL, 5, 1, 1);
+INSERT INTO `app_menu_info` VALUES (10011, '类目分类', 'fa-circle-o', 10009, '/admin/vidotype', NULL, 5, 1, 1);
 INSERT INTO `app_menu_info` VALUES (10012, '标签分类', 'fa-circle-o', 10009, '/admin/screenotype', NULL, 5, 1, 1);
 INSERT INTO `app_menu_info` VALUES (10013, '留言管理', 'fa-circle-o', 0, NULL, NULL, 5, 0, 0);
 INSERT INTO `app_menu_info` VALUES (10014, '留言列表', 'fa-circle-o', 10013, '/admin/msg', NULL, 5, 0, 0);
@@ -277,7 +265,7 @@ INSERT INTO `app_menu_info` VALUES (10019, '提现列表', 'fa-circle-o', 10018,
 INSERT INTO `app_menu_info` VALUES (10020, 'VIP金额', 'fa-circle-o', 0, NULL, NULL, 5, 0, 0);
 INSERT INTO `app_menu_info` VALUES (10021, '更新VIP金额', 'fa-circle-o', 10020, '/admin/vip', NULL, 5, 0, 0);
 INSERT INTO `app_menu_info` VALUES (10022, '视频问题反馈', 'fa-circle-o', 10013, '/admin/trouble', NULL, 5, 0, 0);
-INSERT INTO `app_menu_info` VALUES (10023, '转码队列', 'fa-circle-o', 10001, '/admin/transqueue', NULL, 5, 1, 1);
+INSERT INTO `app_menu_info` VALUES (10023, '转码队列', 'fa-circle-o', 10001, '/admin/transqueue', NULL, 5, 0, 0);
 
 -- ----------------------------
 -- Table structure for app_msg_log
@@ -743,9 +731,6 @@ CREATE TABLE `app_screen_otype`  (
 -- ----------------------------
 -- Records of app_screen_otype
 -- ----------------------------
-INSERT INTO `app_screen_otype` VALUES (10013, 5, '最新上架', 0);
-INSERT INTO `app_screen_otype` VALUES (10014, 5, '所有类别', 0);
-INSERT INTO `app_screen_otype` VALUES (10017, 10, '所有地区', 0);
 INSERT INTO `app_screen_otype` VALUES (10018, 1, '销量最多', 10011);
 INSERT INTO `app_screen_otype` VALUES (10019, 1, 'A', 10012);
 INSERT INTO `app_screen_otype` VALUES (10020, 1, 'C', 10012);
@@ -764,7 +749,6 @@ INSERT INTO `app_screen_otype` VALUES (10036, 5, '1MV', 10035);
 INSERT INTO `app_screen_otype` VALUES (10038, 10, '11', 10037);
 INSERT INTO `app_screen_otype` VALUES (10039, 10, '22', 10037);
 INSERT INTO `app_screen_otype` VALUES (10040, 5, '热门', 10013);
-INSERT INTO `app_screen_otype` VALUES (10041, 10, '测试x', 0);
 INSERT INTO `app_screen_otype` VALUES (10042, 10, '546457', 10041);
 
 -- ----------------------------
@@ -1753,15 +1737,10 @@ CREATE TABLE `app_video_otype`  (
   `otype` int(11) DEFAULT 1 COMMENT ' 1:mv    5:视频',
   `otypename` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '分类名称',
   `pic` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL,
+  `otypename_en` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '英文名称',
+  `otypename_ks` varchar(80) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT NULL COMMENT '外文名称',
   PRIMARY KEY (`oid`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 10027 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
-
--- ----------------------------
--- Records of app_video_otype
--- ----------------------------
-INSERT INTO `app_video_otype` VALUES (10024, 0, '爱情片', NULL);
-INSERT INTO `app_video_otype` VALUES (10025, 0, '动作片', NULL);
-INSERT INTO `app_video_otype` VALUES (10026, 10024, '犯罪', NULL);
 
 -- ----------------------------
 -- Table structure for app_video_trouble
